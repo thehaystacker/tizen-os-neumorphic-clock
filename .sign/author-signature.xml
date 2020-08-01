@@ -2,6 +2,11 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
+<Reference URI=".DS_Store">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>a2BW4puYzkxrO/NmOzdRUDOYv3ijw56uKQw7wn5UtNtwnXjsDVU6ha64kz+j02kSSJ5FpNYi54vo
+D3+gLeeW3g==</DigestValue>
+</Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>jHOrKQB6lBEdeKr7sxwIiFeQ3t3KtMltGwE1RiH/LbPirWxvwRUCTSjuLU/+t1xK1cLE2M2Oh5NT
@@ -42,11 +47,11 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-JnLRvU370VZPjOBGfnG2/HSRHb+Eva1DC3VPHHtJ3+WL1LkadWtw2AtuTFC4MLDNc28NhDpFPLMI
-FJ/dmKIA3AIUuK/AtmQCUwb/VlbPD/HpeKaO3RrR4gOpb+7uh4a1CFQ7WuvK5fwMG5EMWzJEKiBU
-YBPqaaofav+f3cqH+uanl/OTC2AbhBBqSXRAauGZdJr4UFLSvRAVnv6BtIoqGhFM2KNY76Eye2Ul
-2kRFTdvvQRuyWi7gGWCByyad5Ca3PnKCdgtqMOuZs1jqSbVIJKVO7tTMEqqoeknXL5GCgGK0I9vv
-wCPsU9V0DXSJ4tyA5kRPk6E8AUGt55UESChw4g==
+sdisIoOQlC9hG3l4QD/t8eZODu5gG66+bjXSf0qEYZHHI9yiahF6Z0NSUyp6mK3CwrhDw6mXnOIJ
+Iq8+jtkiKTDQA8d+NJzMKVqDHQBjZXQj3DdvPi0zJROw4XrODgXGZZ6BYZwmai9jAGwDsN97JinM
+u8sm2xgLKyZ/Fgm6IlYgjwub4tVGJeCUYmgoWzKA3ZZi4+BamfUJ0x5Dgjlt1QXHp+yyseGoO39C
+HyHSH9o7MnFJNEfvzZEVu9R3jg1sJfBSliwyGvt9SDdtqi+j0VLIHH4WePHLJOR738D9smOS1Gt+
+Hfh2OFuLe9GPJlhMuAqg5Ge2sEoM7tIb36w79A==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
