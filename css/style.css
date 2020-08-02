@@ -35,17 +35,62 @@ body {
   z-index: 15;
 }
 
-.hr, .mn, .sc {
+.wrap-hour,
+.wrap-min,
+.wrap-sec {
+  position: absolute;
+}
+
+.wrap-hour, .wrap-hour .hr,
+.wrap-min, .wrap-min .mn,
+.wrap-sec, .wrap-sec .sc {
   display: flex;
   justify-content: center;
 }
 
-.hr:before {
+.wrap-hour,
+.wrap-hour .hr {
+  width: 160px;
+  height: 160px;
+}
+
+.wrap-min,
+.wrap-hour .mn {
+  width: 190px;
+  height: 190px;
+}
+
+.wrap-sec,
+.wrap-sec .sc {
+  width: 190px;
+  height: 190px;
+}
+
+.wrap-hour .hr:before {
   content: '';
   position: absolute;
-  background-color: red;
+  background-color: #d92364;
   height: 80px;
   width: 7px;
   border-radius: 4px;
+  z-index: 10;
+}
+
+.wrap-min .mn:before {
+  content: '';
+  position: absolute;
+  background-color: #505457;
+  height: 120px;
+  width: 5px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.wrap-sec .sc:before {
+  content: '';
+  position: absolute;
+  background-color: #c0c0c0;
+  height: 120px;
+  width: 2px;
   z-index: 10;
 }

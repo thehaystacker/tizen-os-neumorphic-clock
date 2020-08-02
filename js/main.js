@@ -1,10 +1,32 @@
+var init = function (e) {
+  var deg = 6;
+  var _elHr = document.getElementById("hr");
+  var _elMn = document.getElementById("mn");
+  var _elSc = document.getElementById("sc");
+
+  var updateTime = function () {
+    var day = new Date();
+    var hh = day.getHours() * 30;
+    var mm = day.getMinutes() * deg;
+    var ss = day.getSeconds() * deg;
+
+    _elHr.style.transform = "rotateZ(" + (hh + mm / 12) + "deg)";
+    _elMn.style.transform = "rotateZ(" + mm + "deg)";
+    _elSc.style.transform = "rotateZ(" + ss + "deg)";
+  };
+
+  setInterval(updateTime, 1000);
+};
+
+window.onload = init();
+
 // var checkTime;
 
 // //Initialize function
 // var init = function () {
 //     // TODO:: Do your initialization job
 //     console.log('init() called');
-    
+
 //     document.addEventListener('visibilitychange', function() {
 //         if(document.hidden){
 //             // Something you want to do when hide or exit.
@@ -12,7 +34,7 @@
 //             // Something you want to do when resume.
 //         }
 //     });
- 
+
 //     // add eventListener for keydown
 //     document.addEventListener('keydown', function(e) {
 //     	switch(e.keyCode){
