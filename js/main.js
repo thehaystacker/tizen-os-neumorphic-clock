@@ -1,26 +1,29 @@
-var init = function (e) {
-  var deg = 6;
-  var _elHr = document.getElementById("hr");
-  var _elMn = document.getElementById("mn");
-  var _elSc = document.getElementById("sc");
+(function ($) {
+  $(function () {
+    var initClock = function () {
+      var deg = 6;
+      var _elHr = document.getElementById("hr");
+      var _elMn = document.getElementById("mn");
+      var _elSc = document.getElementById("sc");
 
-  var updateTime = function () {
-    var day = new Date();
-    var hh = day.getHours() * 30;
-    var mm = day.getMinutes() * deg;
-    var ss = day.getSeconds() * deg;
+      var updateTime = function () {
+        var day = new Date();
+        var hh = day.getHours() * 30;
+        var mm = day.getMinutes() * deg;
+        var ss = day.getSeconds() * deg;
 
-    _elHr.style.transform = "rotateZ(" + (hh + mm / 12) + "deg)";
-    _elMn.style.transform = "rotateZ(" + mm + "deg)";
-    _elSc.style.transform = "rotateZ(" + ss + "deg)";
-  };
+        _elHr.style.transform = "rotateZ(" + (hh + mm / 12) + "deg)";
+        _elMn.style.transform = "rotateZ(" + mm + "deg)";
+        _elSc.style.transform = "rotateZ(" + ss + "deg)";
+      };
 
-  setInterval(updateTime, 1000);
-};
+      setInterval(updateTime, 1000);
+    };
 
-window.onload = init();
+    initClock();
+  });
+})(jQuery);
 
-// var checkTime;
 
 // //Initialize function
 // var init = function () {
