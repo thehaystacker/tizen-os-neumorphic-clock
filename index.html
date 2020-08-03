@@ -17,19 +17,21 @@
 
 <body>
   <div class="wrap-nav">
-    <button type="button" id="btn-customize">Customize</button>
-    <button type="button" id="btn-profile">Profile</button>
+    <button type="button" focusable id="btn-customize" class="nc-btn">Customize</button>
+    <button type="button" focusable data-focusable-initial-focus="true" id="btn-profile" class="nc-btn">Profile</button>
   </div>
 
   <div class="wrap-clock">
-    <div class="wrap-hour">
-      <div class="hr" id="hr"></div>
-    </div>
-    <div class="wrap-min">
-      <div class="mn" id="mn"></div>
-    </div>
-    <div class="wrap-sec">
-      <div class="sc" id="sc"></div>
+    <div class="clock">
+      <div class="wrap-hour">
+        <div class="hr" id="hr"></div>
+      </div>
+      <div class="wrap-min">
+        <div class="mn" id="mn"></div>
+      </div>
+      <div class="wrap-sec">
+        <div class="sc" id="sc"></div>
+      </div>
     </div>
   </div>
 

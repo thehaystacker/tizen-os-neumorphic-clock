@@ -20,10 +20,30 @@
       setInterval(updateTime, 1000);
     };
 
+    $.caph.focus.activate(function (
+      nearestFocusableFinderProvider,
+      controllerProvider
+    ) {
+      controllerProvider.onFocused(function (event, originalEvent) {
+        $(event.currentTarget).css({
+          border: "3px solid red",
+        });
+      });
+
+      controllerProvider.onBlurred(function (event, originalEvent) {
+        $(event.currentTarget).css({
+          border: "3px solid transparent",
+        });
+      });
+
+      controllerProvider.onSelected(function (event, originalEvent) {
+        $(event.currentTarget).toggleClass("selected");
+      });
+    });
+
     initClock();
   });
 })(jQuery);
-
 
 // //Initialize function
 // var init = function () {

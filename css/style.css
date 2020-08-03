@@ -7,12 +7,24 @@
 body {
   background-color: #ebf8ff;
   justify-content: center;
-  display: flex;
-  align-items: center;
   min-height: 100vh;
 }
 
+.wrap-nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
 .wrap-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.clock {
   width: 350px;
   height: 350px;
   border-radius: 50%;
