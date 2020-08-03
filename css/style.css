@@ -80,7 +80,7 @@ body {
   content: '';
   position: absolute;
   background-color: #505457;
-  height: 120px;
+  height: 100px;
   width: 5px;
   border-radius: 4px;
   z-index: 10;
